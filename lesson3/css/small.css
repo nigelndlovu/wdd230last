@@ -32,7 +32,7 @@ header {
   padding: .8rem 2%;
   background-color: var(--accent2-color);
   display: grid;
-  grid-template-columns: 250px auto;
+  grid-template-columns: 150px auto;
   color: white;
 }
 
@@ -51,8 +51,8 @@ header h2 {
 }
 
 header div img {
-  width: 100%;
-  height: auto;
+  width: 100px;
+  height: 100px;
 }
 
 /*----------Navigation----------*/
