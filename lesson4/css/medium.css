@@ -11,21 +11,27 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .mainsection section:nth-child(1),
-  .mainsection section:nth-child(2) {
+  #hero {
     grid-column: span 2;
   }
 
-
-  .mainsection section:nth-child(4) {
+  #join {
     display: block;
     grid-column: span 2;
     grid-row: 4;
   }
-  
-  .mainsection section:nth-child(5),
-  .mainsection section:nth-child(6) {
+
+  #spotlights {
+    grid-column: span 2;
     grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  #news {
+    grid-row: 2;
+    grid-column: span 2;
   }
 
   /*-----------Footer--------------*/
