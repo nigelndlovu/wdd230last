@@ -59,11 +59,9 @@ header h2 {
   font-weight: normal; 
 }
 
-header div img {
+header figure.logo {
   float: left;
-  font-weight: normal;
-  width: 100px;
-  height: 100px;
+  margin: 0 2% 0 0;
 }
 
 .headerdate {
@@ -218,7 +216,9 @@ footer  {
   color: white;
 }
 
-footer img {
+.logo {
+  width: 100px;
+  height: auto;
   float: left;
 }
 
@@ -241,4 +241,10 @@ footer img {
 .mapouter {
   position: relative;
   text-align: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
