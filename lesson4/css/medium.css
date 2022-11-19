@@ -11,6 +11,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .discoversection {
+    margin: 4rem;
+  }
+
   #hero {
     grid-column: span 2;
   }

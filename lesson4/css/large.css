@@ -39,6 +39,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
+  .discoversection {
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: auto;
+  }
+
   #hero,
   #event {
     grid-column: span 1;
