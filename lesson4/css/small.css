@@ -304,6 +304,71 @@ table, th, td {
   border-left: blue solid 6px;
 }
 
+.directoryBtns {
+  text-align: center;
+}
+
+#gridbtn {
+  color: white;
+  background-size: 73px 73px;
+  height: 75px;
+  width: 75px;
+}
+  
+#listbtn {
+  color: white;
+  background-size: 73px 73px;
+  height: 75px;
+  width: 75px;
+}
+
+.directoryBtns button{
+  background-color: var(--accent1-color);
+  margin: -2em 1em 2em 1em;
+}
+  
+.directoryBtns button:focus{
+  background-color: var(--secondary-color);
+}
+  
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-gap: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  
+}
+
+.cards section h2 {
+  padding: 1rem;
+  background-color: var(--accent2-color);
+  color: white;
+  border-radius: 20px;
+}
+  
+.cards section {
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+  
+.cards img {
+  display: none;
+  margin: auto;
+  display: block;
+  background-color: white;
+  width: 70%;
+  height: 200px;
+  box-shadow: 5px 5px 10px var(--primary-color);
+  border-radius: 20px;
+  max-width: 200px;
+}
+
+  
+.cards section a {
+  text-align: center;
+}
+
 /*--------------Footer--------------*/
 
 footer  {

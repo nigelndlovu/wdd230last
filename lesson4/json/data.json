@@ -1,0 +1,76 @@
+{
+  "details": [
+    {
+      "name": "Dabane Trust",
+      "address": "13 Cathkin Lane, Burnside, Bulawayo",
+      "phone": "+263 (292) 244775",
+      "member": "NP",
+      "imageurl": "images/dabane.png",
+			"weburl": "http://dabane.org/"
+    },
+    {
+      "name": "Greens Supermarket",
+      "address": "Jason Moyo Street, Bulawayo",
+      "phone": "+263 (292) 886619",
+      "member": "Silver",
+      "imageurl": "images/greens.png",
+			"weburl": "https://greensonline.co.zw/"
+    },
+    {
+      "name": "Datlabs",
+      "address": "45 Falcon Street, Belmont, Bulawayo",
+      "phone": "+263 (292) 470092",
+      "member": "Bronze",
+      "imageurl": "images/datlabs.png",
+			"weburl": "http://datlabs.co.zw/"
+    },
+    {
+      "name": "NUST University",
+      "address": "PO Box AC 939, Ascot, Bulawayo",
+      "phone": "+263 (292) 282842",
+      "member": "Bronze",
+      "imageurl": "images/nust.jpeg",
+			"weburl": "https://www.nust.ac.zw/"
+    },
+    {
+      "name": "First Capital Bank",
+      "address": "Corner First St & Jason Moyo Ave, Harare",
+      "phone": "+263 (242) 250579",
+      "member": "Gold",
+      "imageurl": "images/fcb.jpeg",
+			"weburl": "https://firstcapitalbank.co.zw/"
+    },
+    {
+      "name": "ZimPro",
+      "address": "182 Samora Machel (Corner 8th), Harare",
+      "phone": "+263 (242) 253301",
+      "member": "NP",
+      "imageurl": "images/zimpro.jpeg",
+			"weburl": "https://www.zpt.co.zw/"
+    },
+    {
+      "name": "MASCA",
+      "address": "Masca House, No 2 11th Ave & S Parirenyatwa, Bulawayo",
+      "phone": "+263 (292) 880829",
+      "member": "Gold",
+      "imageurl": "images/masca.png",
+			"weburl": "https://www.masca.healthcare/"
+    },
+    {
+      "name": "Mpilo Hospital",
+      "address": "Vera Rd Mzilikazi, P.O. Box 2096, Bulawayo",
+      "phone": "+263 (292) 212011",
+      "member": "Silver",
+      "imageurl": "images/mpilo.png",
+			"weburl": "http://www.mpilo.org.zw/"
+    },
+    {
+      "name": "Webb Low & Barry",
+      "address": "11 Luton Street, Belmont, Bulawayo",
+      "phone": "+263 (292) 2264481",
+      "member": "Gold",
+      "imageurl": "images/wlb.png",
+			"weburl": "https://webblowbarry.com/"
+    }
+  ]
+}

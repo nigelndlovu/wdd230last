@@ -40,8 +40,8 @@
 			<li><a class="ham" href="#">☰</a></li>
 			   <li><a href="index.html">Home</a></li>
 			   <li><a href="discover.html">Discover</a></li>
-			   <li class="active"><a href="join.html">Join</a></li>
-			   <li><a href="directory.html">Directory</a></li>
+			   <li><a href="join.html">Join</a></li>
+			   <li class="active"><a href="directory.html">Directory</a></li>
 			   <li><a href="#">Contact Us</a></li>
 		 </ul>
 		 <div class="social">
@@ -60,62 +60,12 @@
 		</div>
 	</nav>
 	<main class="clearfix">
-		<h1>Join</h1>
-		<div class="mainsection-join">
-			<form method="get" action="thankyou.html">
-				<h2>Membership Signup</h2>
-				<p>Please complete this form to join</p>
-				<label for="fname">First name*</label>
-				<input type="text" id="fname" name="fname" required>
-				<label for="lname">Last name*</label>
-				<input type="text" id="lname" name="lname" required>
-				<label for="title">Title</label>
-				<input type="text" id="title" name="title" pattern="[A-Za-z\-\s]{8,}">
-				<label for="email">E-mail*</label>
-				<input type="text" id="email" name="email" placeholder="address@mail.com" required>
-				<label for="phone">Cellphone*</label>
-				<input type="tel" id="phone" name="phone" required>
-				<label for="businessname">Business Name*</label>
-				<input type="text" id="businessname" name="businessname" required>
-				<label for="memberlevel">Membership Level</label>
-				<select name="memberlevel" id="memberlevel">
-					<option value="NP">NP</option>
-					<option value="Bronze">Bronze</option>
-					<option value="Silver">Silver</option>
-					<option value="Gold">Gold</option>
-				</select>
-				<label for="details">Business Description</label>
-				<textarea id="details" name="details" rows="5" cols="40"></textarea>
-				<input type="hidden" id="formDate" name="formDate" value="">
-				<label for="subscribe"></label>
-				<button type="submit" class="subscribe">Subscribe</button>
-			</form>
-			<table class="memberb">
-				<thead class="tablecolor">
-					<tr>
-						<th colspan="2"><h3>Membership Benefits</h3></th>
-				  	</tr>
-				</thead>
-				<tbody class="tablecolor">
-				  	<tr>
-						<th>NP Membership</th>
-						<td>For non profit organizations and there is no joining fee</td>
-				  	</tr>
-				  	<tr>
-						<th>Bronze Membership</th>
-						<td>Training available</td>
-				  	</tr>
-				  	<tr>
-						<th>Silver Membership</th>
-						<td>Training and marketing services</td>
-				  	</tr>
-				  	<tr>
-						<th>Gold Membership</th>
-						<td>Training, marketing and discounts</td>
-				  	</tr>
-				</tbody>
-			</table>
-		</div>
+		<h1>Directory</h1>
+        <div class="directoryBtns">
+            <button id="gridbtn">Grid</button>
+            <button id="listbtn">List</button>
+        </div>
+        <div class="cards"></div>
 	</main>
 	<footer class="clearfix">
 		<div class="wrapper">
@@ -142,6 +92,8 @@
     </div>
 	</footer>
 	<script src="js/index.js"></script>
+    <script src="js/lazyload.js"></script>
 	<script src="js/windchill.js"></script>
+    <script src="js/directory.js"></script>
 </body>
 </html>
