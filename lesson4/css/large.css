@@ -77,6 +77,11 @@
     grid-row: 3 / 4;
   }
 
+  .memberb {
+    display: inline-block;
+    border: none;
+  }
+
 /*-------------Footer---------------*/
 
 }

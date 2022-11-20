@@ -240,6 +240,70 @@ picture img[data-src] {
   filter: blur(0.2em);
 }
 
+.mainsection-join {
+  display: flex;
+}
+
+.memberb {
+  color: var(--accent1-color);
+  margin: 2em;
+  max-width: 30em;
+  font-family: "New Tegomin", serif;
+  display: none;
+}
+
+.tablecolor {
+  background-color: var(--secondary-color);
+}
+
+table, th, td {
+  border: 1px solid var(--accent1-color);
+  border-collapse: collapse;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.mainsection-join form {
+  border: 1px solid var(--accent1-color);
+  color: var(--accent1-color);
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.mainsection-join form label {
+  display: block;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.mainsection-join form input {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  max-width: 40rem;
+  border-radius: 4px;
+  margin-top: 4px;
+  background-color: var(--background-color);
+}
+
+.mainsection-join select {
+  background-color: var(--background-color);
+}
+
+.mainsection-join textarea {
+  background-color: var(--background-color);
+}
+
+.mainsection-join form input:required {
+  border-left: red solid 6px;
+}
+.mainsection-join form input:required:valid {
+  border-left: blue solid 6px;
+}
+
 /*--------------Footer--------------*/
 
 footer  {

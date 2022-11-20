@@ -7,7 +7,7 @@
 	<title>Nigel Ndlovu - WDD230</title>
 	<meta
 		name="description"
-		content="This is a chamber of commerce site for byochamber.com"
+		content="Assignment portal for Nigel Ndlovu in WDD230: Web Frontend Development at BYUI"
 	/>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -38,9 +38,9 @@
 	<nav class="clearfix">
 		<ul class="navigation">
 			<li><a class="ham" href="#">☰</a></li>
-			   <li class="active"><a href="index.html">Home</a></li>
+			   <li><a href="index.html">Home</a></li>
 			   <li><a href="discover.html">Discover</a></li>
-			   <li><a href="join.html">Join</a></li>
+			   <li class="active"><a href="join.html">Join</a></li>
 			   <li><a href="#">Directory</a></li>
 			   <li><a href="#">Contact Us</a></li>
 		 </ul>
@@ -59,86 +59,62 @@
 			</svg></a>
 		</div>
 	</nav>
-	<main>
-		<h1>Home</h1>
-		<div class="mainsection">
-			<section id="hero">
-				<figure>
-					<img src="images/wdd230-org.jpg" alt="Bulawayo City CBD" sizes="50vw"
-					srcset="images/wdd230-org200.jpg 200w, images/wdd230-org500.jpg 500w, 
-					images/wdd230-org800.jpg 800w, images/wdd230-org1100.jpg 1100w">
-				</figure>
-				<h2>Welcome to Bulawayo</h2>
-				<button type="submit">Join Now!</button>
-			</section>
-			<section id="event">
-				<h4>International Conference on Finance, Bank & Economics</h4>
-				<div id="local">Holiday Inn, Bulawayo</div>
-				<p>
-					The aim of the Conference is to provide a platform to the researchers and practitioners 
-					from both academia as well as industry to meet the share cuttingedge development 
-					in the field.
-				</p>
-			</section>
-			<section id="weather">
-				<h2>Weather</h2>
-				<p>
-					<figure>
-						<img src="" alt="" id="weather-icon">
-						<figcaption></figcaption>
-					</figure>
-					Temparature: <span id="temp">9.2</span>&deg;C<br>
-					Humidity: <span id="humid">50</span>%<br>
-					Wind Speed: <span id="speed">5.8</span>km/h
-					Windchill: <span id="chill"></span>
-				</p>
-			</section>
-			<section id="join">
-				<button type="submit">Join Us!</button>
-				<p>
-					Discover the benefits your organization will receive as a member of the chamber of commerce.
-				</p>
-			</section>
-			<section id="spotlights">
-				<section id="spot1">
-					<h2>Spotlight 1</h2>
-					<p>
-						Aenean eget urna sit amet turpis elementum dapibus 
-					eget et est. Integer accumsan lacus et massa rutrum, 
-					at sodales quam vulputate. Suspendisse libero lectus, 
-					tincidunt eget mollis et, mollis id tortor. Aliquam 
-					semper sodales mauris quis fringilla.
-					</p>
-				</section>
-				<section id="spot2">
-					<h2>Spotlight 2</h2>
-					<p>
-						Praesent porttitor ullamcorper tellus, nec semper 
-					massa finibus eget. Aenean luctus, dui eget eleifend 
-					luctus, lacus sapien blandit sem, consectetur aliquet 
-					justo nulla a mauris
-					</p>
-				</section>
-				<section id="spot3">
-					<h2>Spotlight 3</h2>
-					<p>
-						Duis tincidunt 
-					ex sed purus fermentum vestibulum vitae eget nunc. 
-					Nulla at diam a orci posuere lobortis id quis arcu.
-					</p>
-				</section>
-			</section>
-			<section id="news">
-				<h2>News Release</h2>
-				<p>
-					Vestibulum ante ipsum primis in faucibus orci luctus 
-					et ultrices posuere cubilia curae; Maecenas euismod 
-					vel ligula id commodo. Pellentesque finibus sapien id 
-					ante sagittis porta. Curabitur ut odio ut mauris 
-					vestibulum consectetur non vel sem. Aenean tempor in 
-					lorem tincidunt convallis.
-				</p>
-			</section>
+	<main class="clearfix">
+		<h1>Join</h1>
+		<div class="mainsection-join">
+			<form method="get" action="thankyou.html">
+				<h2>Membership Signup</h2>
+				<p>Please complete this form to join</p>
+				<label for="fname">First name*</label>
+				<input type="text" id="fname" name="fname" required>
+				<label for="lname">Last name*</label>
+				<input type="text" id="lname" name="lname" required>
+				<label for="title">Title</label>
+				<input type="text" id="title" name="title" pattern="[A-Za-z\-\s]{8,}">
+				<label for="email">E-mail*</label>
+				<input type="text" id="email" name="email" placeholder="address@mail.com" required>
+				<label for="phone">Cellphone*</label>
+				<input type="tel" id="phone" name="phone" required>
+				<label for="businessname">Business Name*</label>
+				<input type="text" id="businessname" name="businessname" required>
+				<label for="memberlevel">Membership Level</label>
+				<select name="memberlevel" id="memberlevel">
+					<option value="NP">NP</option>
+					<option value="Bronze">Bronze</option>
+					<option value="Silver">Silver</option>
+					<option value="Gold">Gold</option>
+				</select>
+				<label for="details">Business Description</label>
+				<textarea id="details" name="details" rows="5" cols="40"></textarea>
+				<input type="hidden" id="formDate" name="formDate" value="">
+				<label for="subscribe"></label>
+				<button type="submit" class="subscribe">Subscribe</button>
+			</form>
+			<table class="memberb">
+				<thead class="tablecolor">
+					<tr>
+						<th colspan="2"><h3>Membership Benefits</h3></th>
+				  	</tr>
+				</thead>
+				<tbody class="tablecolor">
+				  	<tr>
+						<th>NP Membership</th>
+						<td>For non profit organizations and there is no joining fee</td>
+				  	</tr>
+				  	<tr>
+						<th>Bronze Membership</th>
+						<td>Training available</td>
+				  	</tr>
+				  	<tr>
+						<th>Silver Membership</th>
+						<td>Training and marketing services</td>
+				  	</tr>
+				  	<tr>
+						<th>Gold Membership</th>
+						<td>Training, marketing and discounts</td>
+				  	</tr>
+				</tbody>
+			</table>
 		</div>
 	</main>
 	<footer class="clearfix">
