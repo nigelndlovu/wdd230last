@@ -1,0 +1,58 @@
+
+body {
+    max-width: 100rem;
+    align-items: center;
+    font-size: 18px;
+    margin: auto;
+    background-color: rgb(138, 153, 156);
+}
+
+h1 {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #bed;
+    color: blue;
+    text-shadow: 0 0 15px grey;
+    text-align: center;
+}
+
+.cards section h2 {
+    padding: 0.25rem;
+}
+
+#emessage {
+    visibility: hidden;
+    margin: 1rem;
+    border: 1px solid #777;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    background-color: indianred;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    grid-gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.cards section {
+    text-align: center;
+    background-color: rgb(155, 186, 241);
+}
+
+.highlight {
+    color: rgb(75, 25, 183);
+}
+
+.cards section img {
+    width: 80%;
+    margin: 0.8em;
+}
+
+footer {
+    border-top: 1px solid #555;
+    text-align: center;
+}
