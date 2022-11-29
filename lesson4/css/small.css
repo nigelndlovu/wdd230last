@@ -208,30 +208,32 @@ button:hover {
   transform: rotate(360deg);
 }
 
-#spotlights{
+.spotlights {
+  margin: 10px;
+  background-color: var(--secondary-color);
   display: grid;
-  grid-template-rows: auto auto;
+  padding: 15px;
 }
 
-#spotlights section{
-  margin-top: 0;
-  margin-bottom: 0;
+.spot1 {
+  background-color: white;
   text-align: center;
-  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.7);
+  padding: 10px;
+}
+.spot1 img {
+  width: 30%;
 }
 
-#spotlights section img, .cards img{
-  width: 150px;
-  height: auto;
-  margin: auto;
+.spot2 {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+}
+.spot2 img {
+  width: 50%;
 }
 
-#spotlights section a{
-  display: block;
-  padding: 0.75em;
-}
-
-#spotlights h2, #spotlights section:nth-child(4){
+.spot3 {
   display: none;
 }
 
