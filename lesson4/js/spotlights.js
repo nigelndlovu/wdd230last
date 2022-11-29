@@ -8,12 +8,21 @@ fetch(requestURL)
   .then(function (jsonObject) {
 		console.table(jsonObject);
     const details = jsonObject['details'];
-    details.forEach(displayDetails);
+		let selectDetails = details.filter(detail => detail.member == "gold" || detail.member == "silver");
+		let spotDetails = [];
+
+		for (let i = 0; i < 3; i++) {
+			spots = Math.floor(Math.random() * selectDetails.length);
+			spotDetails.push(selectDetails[spots]);
+			selectDetails.splice(spots, 1)
+		}
+    spotDetails.forEach(displayDetails);
   });
 
 function displayDetails(detail) {
   // Create elements to add to the document
   let card = document.createElement('section');
+	card.class = "spot1"
 	let logoIcon = document.createElement('img');
   let h2 = document.createElement('h2');
   let address = document.createElement('p');
@@ -48,13 +57,13 @@ function displayDetails(detail) {
 	card.appendChild(weburl);
 
   // Add/append the existing HTML div with the cards class with the section(card)
-  document.querySelector('div.cards').appendChild(card);
+  document.querySelector('#spotlights').appendChild(card);
 }
 
 const maingrid = document.querySelector('.cards')
-const gridbutton = document.querySelector('#grid');
-const listbutton = document.querySelector('#list');
+//const gridbutton = document.querySelector('#grid');
+//const listbutton = document.querySelector('#list');
 
 
-gridbutton.addEventListener('click', () => {maingrid.classList.add('cards')}, false);
-listbutton.addEventListener('click', () => {maingrid.classList.remove('cards')}, false);
+//gridbutton.addEventListener('click', () => {maingrid.classList.add('cards')}, false);
+//listbutton.addEventListener('click', () => {maingrid.classList.remove('cards')}, false);

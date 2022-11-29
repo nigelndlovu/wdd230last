@@ -151,6 +151,7 @@ main h1 {
 
 section {
   border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
   margin: 0.3em;
   padding: 0.6em;
   min-height: 20em;
@@ -161,10 +162,6 @@ section {
 }
 
 #join {
-  display: none;
-}
-
-#spot2 {
   display: none;
 }
 
@@ -211,8 +208,37 @@ button:hover {
   transform: rotate(360deg);
 }
 
+#spotlights{
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+#spotlights section{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.7);
+}
+
+#spotlights section img, .cards img{
+  width: 150px;
+  height: auto;
+  margin: auto;
+}
+
+#spotlights section a{
+  display: block;
+  padding: 0.75em;
+}
+
+#spotlights h2, #spotlights section:nth-child(4){
+  display: none;
+}
+
 .demographics {
   padding: 2rem 2%;
+  background-color: var(--secondary-color);
+  text-align: center;
 }
 
 .discoversection {
@@ -220,6 +246,7 @@ button:hover {
   grid-template-columns: 1fr;
   grid-gap: 10px;
   padding: 2rem 2%;
+  background-color: var(--secondary-color);
 }
 
 .discoversection img {
@@ -250,6 +277,17 @@ picture img[data-src] {
   max-width: 30em;
   font-family: "New Tegomin", serif;
   display: none;
+}
+
+.ourInfo {
+  border: 1px solid var(--accent1-color);
+  color: var(--accent1-color);
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 50em;
+  font-family: "New Tegomin", serif;
 }
 
 .tablecolor {
@@ -308,14 +346,14 @@ table, th, td {
   text-align: center;
 }
 
-#gridbtn {
+#grid {
   color: white;
   background-size: 73px 73px;
   height: 75px;
   width: 75px;
 }
   
-#listbtn {
+#list {
   color: white;
   background-size: 73px 73px;
   height: 75px;
@@ -330,26 +368,27 @@ table, th, td {
 .directoryBtns button:focus{
   background-color: var(--secondary-color);
 }
-  
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   grid-gap: 10px;
   border-radius: 10px;
+  border-width: 0.2rem;
   padding: 20px;
-  
+  background-color: var(--secondary-color);
 }
+
+.cards section {
+  text-align: center;
+}
+  
 
 .cards section h2 {
   padding: 1rem;
   background-color: var(--accent2-color);
   color: white;
   border-radius: 20px;
-}
-  
-.cards section {
-  text-align: center;
-  background-color: var(--secondary-color);
 }
   
 .cards img {
@@ -403,6 +442,10 @@ footer  {
 .mapouter {
   position: relative;
   text-align: right;
+}
+
+.currWeather a {
+  color: white;
 }
 
 .clearfix:after {
